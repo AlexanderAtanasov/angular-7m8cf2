@@ -1,0 +1,8 @@
+<button mat-raised-button (click)="fileBrowser.click()">Fuck</button>
+<input
+  type="file"
+  accept=".json, .csv, .xml, .xls, .xlsx"
+  style="display: none"
+  (change)="runWorkflowWithFile($event)"
+  #fileBrowser
+/>
